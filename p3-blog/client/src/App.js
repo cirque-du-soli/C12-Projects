@@ -18,6 +18,15 @@ import WriteNewBtn from './components/writeNewBtn';
 // MAIN
 function App() {
 
+  ///////////////////////////////// Authentication ///////////////////////////////////////
+  // States
+  const [userNameReg, setUserNameReg] = useState('');
+  const [passwordReg, setPasswordReg] = useState('');
+  const [emailReg, setEmailReg] = useState('');
+  
+  
+  ///////////////////////////////// Authentication ///////////////////////////////////////
+
 
   // STATES
   const [articleTitle, setArticleTitle] = useState('');
@@ -65,7 +74,56 @@ function App() {
   */
   ///////////////////////////////////////////////////////////////////// END: CxUD FUNCTIONS /////
   
-  return (
+
+
+
+
+
+  return ( 
+    // AUTHENTICATION
+
+    <div className="App d-flex justify-content-center">
+      <div className="registration">
+        <h1>Registration</h1>
+        <label>Email:</label>
+        <input 
+          type='text' 
+          onChange={(e) => {
+            setEmailReg(e.target.value);
+          }}
+        />
+        <label>Username:</label>
+        <input 
+          type='text' 
+          onChange={(e) => {
+            setUserNameReg(e.target.value);
+          }}
+        />
+        <label>Password:</label>
+        <input 
+          type='text' 
+          onChange={(e) => {
+            setPasswordReg(e.target.value);
+          }}
+        />
+        <button>Register</button>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+      //////////////////////////////////////////////////////////////////////////////////////// GOOD: Get All Blogs
+      /*
     <div className="App d-flex justify-content-center">
       <div className='pageContainer'>
 
@@ -86,16 +144,13 @@ function App() {
                 <h4 className='col-4'>{"Written By: " + val.authorId}</h4>
                 <p className='col'>{val.body}</p>
               </div>
-
-
             </div>
           );
         })};
- 
       </div>
-
-      
     </div> // END: main <div> "App"
+*/
+    ///////////////////////////////////////////////////////////////////////////////// END GOOD: Get All Blogs
   ); // END: main return()
   
 } // END: App()

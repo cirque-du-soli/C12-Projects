@@ -1,0 +1,59 @@
+==============================================================================================
+==============================================================================================
+INSTALLS:
+=================================================
+CLIENT folder:
+
+npx create-react-app ./
+
+npm i 
+axios
+bootstrap
+
+TO RUN:
+npm start
+
+=======================
+SERVER folder:
+
+npm init ('enter' many times)
+
+INSTALLS:
+npm i express body-parser mysql2 nodemon cors bootstrap sequelize sequelize-cli sqlite3
+
+
+create index.js file
+----- copy T1 below
+
+/*
+add to package.json (under "scripts")
+----- "start": "node index.js", "devStart": "nodemon index.js",
+*/
+
+npx sequelize init
+
+TO RUN:
+npm run devStart
+OR:
+nodemon index.js
+
+
+
+
+
+==============================================================================================
+==============================================================================================
+T1: 
+(initial server index.js)
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Greetings, user!');
+});
+
+app.listen(3001, () => {
+    console.log('Server running on port 3001')
+});
+
