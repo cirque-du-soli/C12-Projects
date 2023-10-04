@@ -1,0 +1,7 @@
+==================================================
+
+npx sequelize init (ON SERVER obvi)
+
+create models according to module.export convention:
+See p4 backup1 for examples of several with Foreign Keys
+
