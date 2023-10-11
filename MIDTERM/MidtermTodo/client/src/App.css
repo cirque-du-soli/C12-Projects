@@ -1,0 +1,77 @@
+.App {
+    text-align: center;
+    font-family: 'Trebuchet' , sans-serif;
+    background-color: lightgreen;
+    min-height: 100vh;
+  }
+
+  .body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pageContainer {
+    background-color: white;
+    padding: 0;
+  }
+    
+  .mainHeader {
+    background-color: cyan;
+    padding: 20px;
+  }
+
+  .mainBanner {
+    background-color: lightcoral;
+    padding: 20px;
+  }
+
+  .newTodoRow {
+    background-color: cyan;
+    padding: 20px;
+
+  }
+  .todoListContainer{
+    background-color: lightcoral;
+    padding: 30px;
+  }
+  
+  .form {/* 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    */
+  }
+  
+  .form input { 
+    margin: 0px 20px 0px 20px;
+  }
+  
+  .todoCard {
+    width: 80%;
+    height: 150px;
+    margin: 10px;
+    border: 2px solid black;  
+    border-radius: 15px;
+    background-color: #61dafb;
+  }
+  
+  #updateInput {
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+  }
+
+
+

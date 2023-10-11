@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       authorId: {
         type: DataTypes.INTEGER,
         allowNull: false,
-        foreignKeyConstraint: true,
+        foreignKeyConstraint: true
       },
       title: {
         type: DataTypes.STRING(320),
