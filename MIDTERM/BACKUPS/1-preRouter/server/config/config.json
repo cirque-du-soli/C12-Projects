@@ -1,0 +1,23 @@
+{
+    "development": {
+        "username": "c12user",
+        "password": "password2",
+        "database": "midtermtodo",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "test": {
+        "username": "c12user",
+        "password": "password2",
+        "database": "midtermtodo",
+        "host": "localhost",
+        "dialect": "mysql"
+    },
+    "production": {
+        "username": "c12user",
+        "password": "password2",
+        "database": "midtermtodo",
+        "host": "localhost",
+        "dialect": "mysql"
+    }
+}
