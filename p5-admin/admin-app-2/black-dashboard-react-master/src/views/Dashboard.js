@@ -50,13 +50,18 @@ import {
   chartExample4,
 } from "variables/charts.js";
 
+
+import TestButton from "components/TestButton";
+
 function Dashboard(props) {
   const [bigChartData, setbigChartData] = React.useState("data1");
   const setBgChartData = (name) => {
     setbigChartData(name);
   };
   return (
-    <>
+  <>
+      
+
       <div className="content">
         <Row>
           <Col xs="12">
@@ -149,6 +154,11 @@ function Dashboard(props) {
               </CardHeader>
               <CardBody>
                 <div className="chart-area">
+
+                  <p>Hi help</p>
+                  <p>{console.log("HERERERERER")}</p>
+                  <p>{console.log(chartExample2.data)}</p>
+
                   <Line
                     data={chartExample2.data}
                     options={chartExample2.options}
